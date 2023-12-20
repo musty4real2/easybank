@@ -393,3 +393,20 @@ nav li:nth-last-child(2) {
 } 
 
 
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+.social{
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+.social svg{
+    padding-top: 35px;
+    justify-content: space-between;
+}
+
+
