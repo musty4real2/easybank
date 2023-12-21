@@ -2,70 +2,52 @@
 
 } */
 
-@media (max-width: 800px) {
-    .hideOnMobile{
-        display: none;
-    }
-    .open-btn{
-        display: block;
-    }
-    .li-wrapper li:first-child {
-        display: block;
-        padding-right: 340px;
-    }
-    .section-container{
-        display: block;
-        justify-content: center;
-        align-self: center;
-        width: 100%;
-        text-align: center;
 
-        /* flex-direction: column-reverse; */
-    }
 
-    .left{
-        display: block;
-        width: 100%;
-        margin-left: 0;
-    } 
-    .left h1{
-        display: block;
-        width: 60%;
-    }
-    .left p{
-        display: block;
-        margin-top: 40px;
-        margin-bottom: 50px;
-        width: 60%;
-    }
-    .butt{
-        display: block;
-        width: 60%;
-        justify-content: center;
-        align-self: center;
 
-    }
-    .right{
-        display: block;
-        margin:0;
-        background-image: url(./images/bg-intro-mobile.svg);
-        background-position:right;
-        overflow-x: hidden;
-        margin-right:0px;
-        padding-right: 40px;
-        width:60%;
-        flex-direction: column-reverse;
-    }
-    .mockup{
-        margin: 0;
-        
-    }
 
+
+
+/* Maaz Edition */
+
+
+
+/* CSS for desktop screens */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (max-width: 400px) {
-    .sidebar{
-        width: 100%;
+.sidebar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hide items with class 'hideOnMobile' on mobile screens */
+.hideOnMobile {
+    display: block;
+}
+
+/* CSS for mobile screens using media queries */
+@media screen and (max-width: 768px) {
+    /* Hide sidebar and 'hideOnMobile' items by default on mobile */
+    .sidebar {
+        display: none;
     }
 
+    .hideOnMobile {
+        display: none;
+    }
+
+    /* Show sidebar toggle button and restyle for mobile */
+    .open-btn {
+        display: block;
+    }
+
+    /* Additional mobile styles for main-menu or other elements */
+    /* Example: Adjustments for the logo size, button size, etc. */
 }
